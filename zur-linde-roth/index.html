@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Gaststätte „Zur Linde“ Roth · Eschenburg</title>
+<style>
+  :root {
+    --bg: #eef3e8;
+    --ink: #1c3328;
+    --deep: #163226;
+    --gold: #b8892a;
+    --leaf: #3d6b46;
+    --card: #f7faf3;
+    --muted: #3f5649;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Figtree, "Source Sans 3", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 1.05rem;
+    line-height: 1.55;
+    background-image:
+      radial-gradient(ellipse at 50% -20%, rgba(184,137,42,.16), transparent 50%),
+      radial-gradient(ellipse at 100% 80%, rgba(61,107,70,.12), transparent 40%);
+  }
+  .banner {
+    background: var(--deep);
+    color: #e8f0e4;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    text-align: center;
+    padding: .45rem 1rem;
+  }
+  .hero {
+    position: relative;
+    padding: 2.6rem 1.25rem 3rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero svg.leaf {
+    position: absolute;
+    opacity: .14;
+    color: var(--leaf);
+  }
+  .hero svg.leaf.l { left: -30px; top: 20px; width: 160px; }
+  .hero svg.leaf.r { right: -40px; bottom: -10px; width: 180px; transform: scaleX(-1) rotate(20deg); }
+  .eyebrow {
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: .72rem;
+    color: var(--leaf);
+    font-weight: 700;
+    margin-bottom: .7rem;
+    position: relative;
+  }
+  h1 {
+    font-family: "EB Garamond", "Libre Baskerville", Georgia, serif;
+    font-size: clamp(2.4rem, 8.5vw, 3.9rem);
+    line-height: 1.02;
+    font-weight: 600;
+    position: relative;
+  }
+  h1 em { font-style: italic; font-weight: 500; }
+  .claim {
+    position: relative;
+    max-width: 28rem;
+    margin: .95rem auto 0;
+    color: var(--muted);
+    font-size: 1.12rem;
+  }
+  .badge {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.25rem;
+    background: var(--deep);
+    color: #f4ecd7;
+    padding: .4rem 1rem;
+    border-radius: 999px;
+    font-weight: 650;
+    font-size: .92rem;
+  }
+  nav {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1rem;
+    padding: .7rem 1rem;
+    background: rgba(247,250,243,.7);
+    border-top: 1px solid rgba(22,50,38,.1);
+    border-bottom: 1px solid rgba(22,50,38,.1);
+    font-size: .95rem;
+  }
+  nav a { color: var(--deep); text-decoration: none; }
+  nav a:hover { color: var(--leaf); }
+  main { max-width: 920px; margin: 0 auto; padding: 0 1.15rem 3rem; }
+  section { padding: 2.3rem 0; border-bottom: 1px solid rgba(22,50,38,.1); }
+  h2 {
+    font-family: "EB Garamond", Georgia, serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .grid { display: grid; gap: 1rem; }
+  @media (min-width: 700px) { .grid.cols { grid-template-columns: 1fr 1fr; } }
+  .card {
+    background: var(--card);
+    border: 1px solid rgba(22,50,38,.1);
+    padding: 1.2rem;
+    border-radius: 12px;
+  }
+  .card h3 {
+    font-family: "EB Garamond", serif;
+    font-size: 1.35rem;
+    margin-bottom: .4rem;
+  }
+  .placeholder {
+    border: 2px dashed #8a6a2a;
+    background: rgba(184,137,42,.08);
+    color: #5c4a20;
+    padding: 1rem;
+    font-style: italic;
+    border-radius: 8px;
+  }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours th, .hours td { text-align: left; padding: .42rem 0; border-bottom: 1px dotted rgba(22,50,38,.16); }
+  .hours th { font-weight: 650; width: 46%; }
+  .note { color: var(--muted); font-size: .9rem; margin-top: .75rem; }
+  .btn {
+    display: inline-block;
+    background: var(--deep);
+    color: #f4ecd7;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 650;
+    margin-top: .7rem;
+    min-height: 44px;
+  }
+  .btn.ghost { background: transparent; color: var(--deep); border: 2px solid var(--deep); }
+  address { font-style: normal; }
+  footer {
+    background: var(--deep);
+    color: #dce8dc;
+    padding: 2rem 1.15rem 2.4rem;
+    font-size: .9rem;
+  }
+  footer .wrap { max-width: 920px; margin: 0 auto; }
+  footer h2 { color: #f4ecd7; font-size: 1.25rem; font-family: "EB Garamond", serif; }
+  footer a { color: #dce8dc; }
+  .ph { opacity: .85; font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="banner">Unverbindlicher Entwurf von Dennis Weinreiter</div>
+  <header class="hero">
+    <svg class="leaf l" viewBox="0 0 120 160" fill="currentColor" aria-hidden="true"><path d="M60 8c28 28 48 62 48 96 0 22-14 40-32 48 2-16-4-34-18-52C46 82 34 68 22 62c8 18 10 36 4 52-16-10-26-28-26-50C0 70 28 32 60 8z"/><path d="M58 20v124" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+    <svg class="leaf r" viewBox="0 0 120 160" fill="currentColor" aria-hidden="true"><path d="M60 8c28 28 48 62 48 96 0 22-14 40-32 48 2-16-4-34-18-52C46 82 34 68 22 62c8 18 10 36 4 52-16-10-26-28-26-50C0 70 28 32 60 8z"/></svg>
+    <p class="eyebrow">Eschenburg-Roth</p>
+    <h1>Zur <em>Linde</em></h1>
+    <p class="claim">Gaststätte und Biergarten in Eschenburg-Roth.</p>
+    <p class="badge">★ 4,6 · 118 Google-Bewertungen</p>
+  </header>
+  <nav>
+    <a href="#angebot">Angebot</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#oeffnungszeiten">Öffnungszeiten</a>
+    <a href="#anfahrt">Anfahrt</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <main>
+    <section id="angebot">
+      <h2>Angebot</h2>
+      <div class="grid cols">
+        <article class="card">
+          <h3>Gaststätte</h3>
+          <p>Klassische Dorfgaststätte in Roth – öffentlich als Restaurant geführt.</p>
+        </article>
+        <article class="card">
+          <h3>Biergarten</h3>
+          <p>Zusätzlich als Biergarten gelistet. Details zu Plätzen, Schirm und Saisonbetrieb können hier ergänzt werden.</p>
+        </article>
+      </div>
+      <div class="placeholder" style="margin-top:1rem">
+        [Speisekarte hier]<br>
+        [Getränkekarte hier]<br>
+        [Preise hier]<br>
+        [Reservierungshinweis hier]
+      </div>
+    </section>
+    <section id="bewertungen">
+      <h2>Bewertungen</h2>
+      <p>Auf Google Maps wird die Gaststätte mit <strong>4,6 von 5 Sternen</strong> aus <strong>118 Bewertungen</strong> bewertet.</p>
+      <p class="note">Einzelne Kundenstimmen werden hier bewusst nicht wiedergegeben. Echte Zitate können später mit Einwilligung ergänzt werden.</p>
+    </section>
+    <section id="oeffnungszeiten">
+      <h2>Öffnungszeiten</h2>
+      <table class="hours">
+        <tr><th>Montag–Dienstag</th><td>geschlossen</td></tr>
+        <tr><th>Mittwoch–Donnerstag</th><td>17:00–21:00 Uhr</td></tr>
+        <tr><th>Freitag–Samstag</th><td>17:00–00:00 Uhr</td></tr>
+        <tr><th>Sonntag</th><td>11:00–14:00 und 17:00–21:00 Uhr</td></tr>
+      </table>
+      <p class="note">Zeiten laut Google Maps – bitte vor Veröffentlichung prüfen.</p>
+    </section>
+    <section id="anfahrt">
+      <h2>Anfahrt</h2>
+      <address>
+        Achenbacher Weg 2<br>
+        35713 Eschenburg-Roth
+      </address>
+      <p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Gastst%C3%A4tte%20Zur%20Linde%20Roth%2C%20Achenbacher%20Weg%202%2C%2035713%20Eschenburg">Auf Google Maps anzeigen</a></p>
+    </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Telefon: <a href="tel:+4927743082">02774 3082</a></p>
+      <p><a class="btn" href="tel:+4927743082">Jetzt anrufen</a></p>
+      <div class="placeholder" style="margin-top:1rem">[E-Mail hier]<br>[Reservierung per Formular hier]</div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <h2>Impressum &amp; Datenschutz</h2>
+      <p class="ph">[Angaben gemäß § 5 TMG hier]</p>
+      <p>Gaststätte „Zur Linde“ Roth<br>Achenbacher Weg 2<br>35713 Eschenburg-Roth<br>Telefon: 02774 3082</p>
+      <p class="ph">[Vertreten durch / Inhaber hier]<br>[USt-IdNr. / weitere Pflichtangaben hier]</p>
+      <p class="ph" style="margin-top:1rem">[Datenschutzerklärung hier]</p>
+      <p style="margin-top:1.2rem;opacity:.7">Unverbindlicher Entwurf – keine offizielle Website des Betriebs.</p>
+    </div>
+  </footer>
+</body>
+</html>

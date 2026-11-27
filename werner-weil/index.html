@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Imbiss &amp; Landmetzgerei Werner Weil · Eschenburg-Wissenbach</title>
+<style>
+  :root {
+    --bg: #f4ebdc;
+    --paper: #fbf6ec;
+    --ink: #2a1810;
+    --red: #8b1e1e;
+    --red-d: #5c1212;
+    --gold: #c4a15a;
+    --brown: #6b4a32;
+    --muted: #5c4638;
+    --line: rgba(42,24,16,.16);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--ink); }
+  body {
+    font-family: "Nunito Sans", "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    background-image:
+      radial-gradient(ellipse at 10% -10%, rgba(139,30,30,.07), transparent 42%),
+      repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(80,40,20,.028) 3px, rgba(80,40,20,.028) 4px);
+  }
+  .banner {
+    background: #2a1810;
+    color: #f4ebdc;
+    font-size: .78rem;
+    letter-spacing: .04em;
+    text-align: center;
+    padding: .45rem 1rem;
+  }
+  header.hero {
+    padding: 2.4rem 1.25rem 2.6rem;
+    text-align: center;
+    border-bottom: 3px double var(--red);
+  }
+  .eyebrow {
+    font-size: .72rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 700;
+    margin-bottom: .7rem;
+  }
+  h1 {
+    font-family: Fraunces, "Playfair Display", "Times New Roman", serif;
+    font-weight: 700;
+    font-size: clamp(2.15rem, 8vw, 3.6rem);
+    line-height: 1.05;
+    color: var(--red-d);
+  }
+  h1 span { display: block; font-style: italic; font-weight: 500; font-size: .52em; color: var(--ink); margin-top: .25rem; }
+  .claim {
+    margin: 1rem auto 0;
+    max-width: 28rem;
+    font-size: 1.08rem;
+    color: var(--muted);
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 1.3rem;
+    border: 2px solid var(--red);
+    color: var(--red-d);
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: .92rem;
+    background: rgba(255,255,255,.45);
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .2rem .9rem;
+    padding: .7rem 1rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(251,246,236,.8);
+    font-size: .92rem;
+  }
+  nav a { color: var(--ink); text-decoration: none; }
+  nav a:hover { color: var(--red); }
+  main { max-width: 920px; margin: 0 auto; padding: 0 1.15rem 3rem; }
+  section { padding: 2.3rem 0; border-bottom: 1px solid var(--line); }
+  h2 {
+    font-family: Fraunces, "Playfair Display", serif;
+    font-size: 1.85rem;
+    color: var(--red-d);
+    margin-bottom: 1rem;
+  }
+  .grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 700px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+    .grid .wide { grid-column: 1 / -1; }
+  }
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 1.15rem 1.2rem 1.25rem;
+    box-shadow: 2px 3px 0 rgba(42,24,16,.05);
+  }
+  .card h3 {
+    font-family: Fraunces, serif;
+    font-size: 1.2rem;
+    margin-bottom: .4rem;
+    color: var(--red-d);
+  }
+  ul.plain { padding-left: 1.1rem; }
+  ul.plain li { margin: .2rem 0; }
+  .placeholder {
+    margin-top: .85rem;
+    border: 2px dashed #a07a4a;
+    background: repeating-linear-gradient(-45deg, #fbf6ec, #fbf6ec 8px, #f3e6d0 8px, #f3e6d0 16px);
+    color: #6b4a32;
+    padding: .85rem 1rem;
+    font-style: italic;
+  }
+  .hours { width: 100%; border-collapse: collapse; }
+  .hours th, .hours td { text-align: left; padding: .4rem 0; border-bottom: 1px dotted var(--line); }
+  .hours th { font-weight: 600; width: 42%; }
+  .muted { color: var(--muted); font-size: .92rem; }
+  .note { font-size: .88rem; color: var(--brown); margin-top: .75rem; font-style: italic; }
+  .btn {
+    display: inline-block;
+    background: var(--red);
+    color: #fffaf3;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    border-radius: 2px;
+    font-weight: 700;
+    margin-top: .6rem;
+    min-height: 44px;
+  }
+  .btn.ghost {
+    background: transparent;
+    color: var(--red-d);
+    border: 2px solid var(--red);
+  }
+  address { font-style: normal; }
+  footer {
+    background: #2a1810;
+    color: #e8d9c4;
+    padding: 2rem 1.15rem 2.4rem;
+    font-size: .9rem;
+  }
+  footer .wrap { max-width: 920px; margin: 0 auto; }
+  footer h2 { color: #f4ebdc; font-size: 1.15rem; }
+  footer a { color: #e8d9c4; }
+  .ph { opacity: .85; font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="banner">Unverbindlicher Entwurf von Dennis Weinreiter</div>
+  <header class="hero">
+    <p class="eyebrow">Eschenburg-Wissenbach</p>
+    <h1>Werner Weil<span>Imbiss &amp; Landmetzgerei</span></h1>
+    <p class="claim">Ihr Imbiss und Ihre Landmetzgerei in Eschenburg-Wissenbach.</p>
+    <p class="badge">★ 4,7 · 325 Google-Bewertungen</p>
+  </header>
+  <nav>
+    <a href="#angebot">Angebot</a>
+    <a href="#bewertungen">Bewertungen</a>
+    <a href="#oeffnungszeiten">Öffnungszeiten</a>
+    <a href="#anfahrt">Anfahrt</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <main>
+    <section id="angebot">
+      <h2>Angebot</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Imbiss</h3>
+          <p>Öffentlich genannt werden unter anderem:</p>
+          <ul class="plain">
+            <li>Currywurst</li>
+            <li>Bratwurst vom Schwein und vom Rind</li>
+            <li>Frikadellen</li>
+            <li>Burger</li>
+            <li>Pommes</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Metzgerei &amp; Feiern</h3>
+          <ul class="plain">
+            <li>Landmetzgerei</li>
+            <li>Partyservice</li>
+            <li>Catering</li>
+          </ul>
+          <p class="muted" style="margin-top:.6rem">Hunde willkommen (Angabe bei Google).</p>
+        </article>
+        <div class="card wide">
+          <div class="placeholder">
+            [Speisekarte hier]<br>
+            [Preise hier]<br>
+            [Aktuelle Angebote / Wochengerichte hier]
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bewertungen">
+      <h2>Bewertungen</h2>
+      <p>Auf Google Maps wird der Betrieb mit <strong>4,7 von 5 Sternen</strong> aus <strong>325 Bewertungen</strong> bewertet.</p>
+      <p class="note">Einzelne Kundenstimmen werden hier bewusst nicht wiedergegeben. Echte Zitate können später mit Einwilligung ergänzt werden.</p>
+    </section>
+    <section id="oeffnungszeiten">
+      <h2>Öffnungszeiten</h2>
+      <table class="hours">
+        <tr><th>Montag–Freitag</th><td>11:00–17:00 Uhr</td></tr>
+        <tr><th>Samstag</th><td>geschlossen</td></tr>
+        <tr><th>Sonntag</th><td>geschlossen</td></tr>
+      </table>
+      <p class="note">Zeiten laut Google Maps. In Branchenverzeichnissen finden sich abweichend 11:00–20:00 Uhr – bitte vor Veröffentlichung prüfen.</p>
+    </section>
+    <section id="anfahrt">
+      <h2>Anfahrt</h2>
+      <address>
+        Zum Alten Friedhof 19<br>
+        35713 Eschenburg-Wissenbach
+      </address>
+      <p><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Imbiss%20Werner%20Weil%2C%20Zum%20Alten%20Friedhof%2019%2C%2035713%20Eschenburg-Wissenbach">Auf Google Maps anzeigen</a></p>
+    </section>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>Telefon: <a href="tel:+492774916906">02774 916906</a></p>
+      <p><a class="btn" href="tel:+492774916906">Jetzt anrufen</a></p>
+      <div class="placeholder" style="margin-top:1rem">[E-Mail hier]<br>[Bestellung / Partyservice-Anfrage hier]</div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <h2>Impressum &amp; Datenschutz</h2>
+      <p class="ph">[Angaben gemäß § 5 TMG hier]</p>
+      <p>Imbiss / Landmetzgerei Werner Weil<br>Zum Alten Friedhof 19<br>35713 Eschenburg-Wissenbach<br>Telefon: 02774 916906</p>
+      <p class="ph">[Vertreten durch / Inhaber hier]<br>[USt-IdNr. / weitere Pflichtangaben hier]</p>
+      <p class="ph" style="margin-top:1rem">[Datenschutzerklärung hier]</p>
+      <p style="margin-top:1.2rem;opacity:.7">Unverbindlicher Entwurf – keine offizielle Website des Betriebs.</p>
+    </div>
+  </footer>
+</body>
+</html>
